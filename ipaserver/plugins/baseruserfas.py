@@ -96,8 +96,8 @@ takes_params = (
         maxlength=255,
         normalizer=lambda value: value.strip(),
     ),
-    URL(
-        "faswebsiteurl?",
+    Str(
+        "faswebsiteurl*",
         cli_name="faswebsiteurl",
         label=_("Website / Blog URL"),
         maxlength=255,
